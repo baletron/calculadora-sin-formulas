@@ -1,0 +1,76 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a73e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Círculo de fondo con gradiente -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad2)" filter="url(#shadow)"/>
+
+  <!-- Icono de calculadora + spreadsheet fusionado -->
+  <g transform="translate(256, 200)">
+    <!-- Calculadora simplificada -->
+    <rect x="-80" y="-60" width="160" height="120" rx="12" fill="white" opacity="0.95"/>
+
+    <!-- Pantalla -->
+    <rect x="-65" y="-45" width="130" height="35" rx="6" fill="#1a73e8"/>
+
+    <!-- Grid de botones (3x3) -->
+    <g opacity="0.9">
+      <circle cx="-40" cy="15" r="12" fill="#1a73e8"/>
+      <circle cx="0" cy="15" r="12" fill="#1a73e8"/>
+      <circle cx="40" cy="15" r="12" fill="#1a73e8"/>
+
+      <circle cx="-40" cy="45" r="12" fill="#667eea"/>
+      <circle cx="0" cy="45" r="12" fill="#667eea"/>
+      <circle cx="40" cy="45" r="12" fill="#667eea"/>
+    </g>
+  </g>
+
+  <!-- Spreadsheet grid debajo -->
+  <g transform="translate(256, 340)">
+    <!-- Grid lines -->
+    <g stroke="white" stroke-width="4" opacity="0.9">
+      <!-- Horizontal -->
+      <line x1="-100" y1="-20" x2="100" y2="-20"/>
+      <line x1="-100" y1="10" x2="100" y2="10"/>
+      <line x1="-100" y1="40" x2="100" y2="40"/>
+
+      <!-- Vertical -->
+      <line x1="-60" y1="-20" x2="-60" y2="40"/>
+      <line x1="-20" y1="-20" x2="-20" y2="40"/>
+      <line x1="20" y1="-20" x2="20" y2="40"/>
+      <line x1="60" y1="-20" x2="60" y2="40"/>
+    </g>
+  </g>
+
+  <!-- Ícono de check/velocidad -->
+  <g transform="translate(400, 120)">
+    <circle r="40" fill="#FFD700" opacity="0.95"/>
+    <path d="M-10 0 L-5 10 L15 -10" stroke="white" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Texto "CSF" o badge -->
+  <g transform="translate(256, 450)">
+    <rect x="-120" width="240" height="50" rx="25" fill="white" opacity="0.95"/>
+    <text y="35" font-family="'Roboto', Arial, sans-serif" font-size="24" font-weight="900"
+          text-anchor="middle" fill="#1a73e8">CALCULADORA</text>
+  </g>
+</svg>

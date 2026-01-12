@@ -1,0 +1,74 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo redondeado con gradiente -->
+  <rect width="512" height="512" rx="96" fill="url(#grad1)"/>
+
+  <!-- Calculadora estilizada (parte superior) -->
+  <g transform="translate(106, 106)">
+    <!-- Cuerpo calculadora -->
+    <rect width="300" height="160" rx="24" fill="white" opacity="0.95"/>
+
+    <!-- Pantalla -->
+    <rect x="30" y="30" width="240" height="50" rx="8" fill="#1a73e8"/>
+    <text x="150" y="63" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+          text-anchor="middle" fill="white">1+1=2</text>
+
+    <!-- Botones (grid 4x3) -->
+    <!-- Fila 1 -->
+    <circle cx="55" cy="115" r="18" fill="#1a73e8"/>
+    <circle cx="120" cy="115" r="18" fill="#1a73e8"/>
+    <circle cx="185" cy="115" r="18" fill="#1a73e8"/>
+    <circle cx="250" cy="115" r="18" fill="#667eea"/>
+
+    <!-- Números en botones -->
+    <text x="55" y="122" font-family="Arial" font-size="20" font-weight="bold"
+          text-anchor="middle" fill="white">7</text>
+    <text x="120" y="122" font-family="Arial" font-size="20" font-weight="bold"
+          text-anchor="middle" fill="white">8</text>
+    <text x="185" y="122" font-family="Arial" font-size="20" font-weight="bold"
+          text-anchor="middle" fill="white">9</text>
+    <text x="250" y="122" font-family="Arial" font-size="20" font-weight="bold"
+          text-anchor="middle" fill="white">+</text>
+  </g>
+
+  <!-- Tabla/Spreadsheet (parte inferior) -->
+  <g transform="translate(106, 300)" opacity="0.95">
+    <!-- Header -->
+    <rect width="300" height="40" rx="8" fill="white"/>
+    <text x="50" y="28" font-family="Arial" font-size="18" font-weight="bold"
+          text-anchor="middle" fill="#1a73e8">A</text>
+    <text x="150" y="28" font-family="Arial" font-size="18" font-weight="bold"
+          text-anchor="middle" fill="#1a73e8">B</text>
+    <text x="250" y="28" font-family="Arial" font-size="18" font-weight="bold"
+          text-anchor="middle" fill="#1a73e8">C</text>
+
+    <!-- Filas de datos -->
+    <rect y="50" width="300" height="30" fill="white" opacity="0.8"/>
+    <rect y="85" width="300" height="30" fill="white" opacity="0.6"/>
+
+    <!-- Líneas de grid -->
+    <line x1="100" y1="0" x2="100" y2="115" stroke="#1a73e8" stroke-width="2" opacity="0.3"/>
+    <line x1="200" y1="0" x2="200" y2="115" stroke="#1a73e8" stroke-width="2" opacity="0.3"/>
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#1a73e8" stroke-width="2" opacity="0.3"/>
+    <line x1="0" y1="80" x2="300" y2="80" stroke="#1a73e8" stroke-width="2" opacity="0.3"/>
+  </g>
+
+  <!-- Ícono de rayo (velocidad) - esquina superior derecha -->
+  <g transform="translate(420, 40)">
+    <circle r="35" fill="#FFD700"/>
+    <path d="M-8 -12 L4 0 L-4 0 L8 12 L-4 4 L4 4 Z" fill="white"/>
+  </g>
+
+  <!-- Badge "Sin Fórmulas" -->
+  <g transform="translate(256, 440)">
+    <rect x="-90" width="180" height="40" rx="20" fill="white"/>
+    <text y="27" font-family="'Roboto', Arial, sans-serif" font-size="18" font-weight="bold"
+          text-anchor="middle" fill="#1a73e8">SIN FÓRMULAS</text>
+  </g>
+</svg>

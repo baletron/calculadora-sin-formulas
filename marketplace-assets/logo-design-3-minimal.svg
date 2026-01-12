@@ -1,0 +1,76 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo cuadrado redondeado -->
+  <rect width="512" height="512" rx="112" fill="url(#grad3)"/>
+
+  <!-- Símbolo de hoja de cálculo moderna -->
+  <g transform="translate(256, 256)">
+    <!-- Grid principal (tabla) -->
+    <rect x="-140" y="-140" width="280" height="200" rx="16" fill="white" opacity="0.95"/>
+
+    <!-- Header row con gradiente sutil -->
+    <rect x="-140" y="-140" width="280" height="45" rx="16" fill="#1a73e8" opacity="0.2"/>
+
+    <!-- Grid lines -->
+    <g stroke="#1a73e8" stroke-width="3" opacity="0.3">
+      <!-- Verticales -->
+      <line x1="-60" y1="-140" x2="-60" y2="60"/>
+      <line x1="20" y1="-140" x2="20" y2="60"/>
+      <line x1="100" y1="-140" x2="100" y2="60"/>
+
+      <!-- Horizontales -->
+      <line x1="-140" y1="-95" x2="140" y2="-95"/>
+      <line x1="-140" y1="-35" x2="140" y2="-35"/>
+      <line x1="-140" y1="15" x2="140" y2="15"/>
+    </g>
+
+    <!-- Celdas con datos visuales (barras de colores) -->
+    <g opacity="0.8">
+      <!-- Columna 1 - datos -->
+      <rect x="-125" y="-115" width="50" height="8" rx="4" fill="#1a73e8"/>
+      <rect x="-125" y="-55" width="40" height="8" rx="4" fill="#667eea"/>
+      <rect x="-125" y="5" width="45" height="8" rx="4" fill="#764ba2"/>
+
+      <!-- Columna 2 - datos -->
+      <rect x="-45" y="-115" width="48" height="8" rx="4" fill="#1a73e8"/>
+      <rect x="-45" y="-55" width="42" height="8" rx="4" fill="#667eea"/>
+      <rect x="-45" y="5" width="50" height="8" rx="4" fill="#764ba2"/>
+
+      <!-- Columna 3 - datos -->
+      <rect x="35" y="-115" width="52" height="8" rx="4" fill="#1a73e8"/>
+      <rect x="35" y="-55" width="44" height="8" rx="4" fill="#667eea"/>
+      <rect x="35" y="5" width="48" height="8" rx="4" fill="#764ba2"/>
+    </g>
+
+    <!-- Icono de fórmula/cálculo (símbolo matemático estilizado) -->
+    <g transform="translate(0, 100)">
+      <circle r="50" fill="#1a73e8"/>
+      <text y="20" font-family="Arial, sans-serif" font-size="50" font-weight="bold"
+            text-anchor="middle" fill="white">Σ</text>
+    </g>
+
+    <!-- Línea de "conexión" entre tabla y cálculo -->
+    <line x1="0" y1="60" x2="0" y2="50" stroke="white" stroke-width="4"
+          stroke-dasharray="8,4" opacity="0.6"/>
+  </g>
+
+  <!-- Badge superior -->
+  <g transform="translate(256, 80)">
+    <rect x="-80" width="160" height="40" rx="20" fill="white" opacity="0.95"/>
+    <text y="27" font-family="'Roboto', Arial, sans-serif" font-size="16" font-weight="bold"
+          text-anchor="middle" fill="#667eea">SHEETS TOOLS</text>
+  </g>
+
+  <!-- Badge inferior -->
+  <g transform="translate(256, 432)">
+    <rect x="-100" width="200" height="48" rx="24" fill="white"/>
+    <text y="32" font-family="'Roboto', Arial, sans-serif" font-size="20" font-weight="900"
+          text-anchor="middle" fill="#1a73e8">SIN FÓRMULAS</text>
+  </g>
+</svg>
