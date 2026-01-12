@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Calculadora Sin Fórmulas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #202124;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #5f6368;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    h2 {
+      color: #1a73e8;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    h3 {
+      color: #202124;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #5f6368;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #5f6368;
+    }
+
+    strong {
+      color: #202124;
+    }
+
+    .highlight {
+      background: #e8f0fe;
+      padding: 15px;
+      border-left: 4px solid #1a73e8;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      color: #5f6368;
+      font-size: 14px;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Última actualización: Enero 2024</p>
+
+    <div class="highlight">
+      <strong>TL;DR (Resumen):</strong>
+      <p style="margin-bottom: 0;">
+        Calculadora Sin Fórmulas NO recopila, almacena ni comparte ningún dato personal.
+        Todos los cálculos se realizan localmente en tu navegador.
+      </p>
+    </div>
+
+    <h2>1. Información que NO Recopilamos</h2>
+    <p>
+      Calculadora Sin Fórmulas es un complemento de Google Sheets que funciona
+      completamente en tu navegador. NO recopilamos ningún tipo de información,
+      incluyendo pero no limitado a:
+    </p>
+    <ul>
+      <li>Datos personales (nombre, email, teléfono)</li>
+      <li>Contenido de tus hojas de cálculo</li>
+      <li>Resultados de cálculos</li>
+      <li>Historial de uso</li>
+      <li>Cookies o identificadores</li>
+      <li>Información de ubicación</li>
+      <li>Información del dispositivo</li>
+    </ul>
+
+    <h2>2. Cómo Funciona el Complemento</h2>
+    <p>
+      El complemento accede únicamente a la hoja de cálculo actual en la que
+      estás trabajando para:
+    </p>
+    <ul>
+      <li>Leer datos de las celdas seleccionadas</li>
+      <li>Realizar cálculos localmente en tu navegador</li>
+      <li>Escribir resultados en nuevas columnas/celdas</li>
+    </ul>
+    <p>
+      <strong>Importante:</strong> Todo el procesamiento ocurre en tu navegador.
+      Ningún dato es enviado a servidores externos.
+    </p>
+
+    <h2>3. Permisos de Google Sheets</h2>
+    <p>
+      El complemento solicita los siguientes permisos de OAuth:
+    </p>
+
+    <h3>spreadsheets.currentonly</h3>
+    <p>
+      <strong>Qué permite:</strong> Acceso de lectura/escritura solo a la hoja
+      de cálculo actual donde se usa el complemento.
+    </p>
+    <p>
+      <strong>Por qué lo necesitamos:</strong> Para leer tus datos, realizar
+      cálculos y escribir resultados.
+    </p>
+    <p>
+      <strong>Qué NO permite:</strong> Acceso a otras hojas de cálculo de tu cuenta.
+    </p>
+
+    <h3>script.container.ui</h3>
+    <p>
+      <strong>Qué permite:</strong> Mostrar interfaces de usuario dentro de Google Sheets.
+    </p>
+    <p>
+      <strong>Por qué lo necesitamos:</strong> Para mostrar el panel lateral y
+      las ventanas de configuración de herramientas.
+    </p>
+
+    <h2>4. Compartir Datos con Terceros</h2>
+    <p>
+      NO compartimos ningún dato con terceros porque NO recopilamos datos.
+    </p>
+
+    <h2>5. Almacenamiento de Datos</h2>
+    <p>
+      El complemento NO almacena ningún dato en servidores. Toda la configuración
+      se guarda localmente en tu navegador usando:
+    </p>
+    <ul>
+      <li>Propiedades de Google Apps Script (local a tu cuenta)</li>
+      <li>LocalStorage del navegador (solo configuraciones de UI)</li>
+    </ul>
+
+    <h2>6. Seguridad</h2>
+    <p>
+      Aunque no recopilamos datos, tomamos la seguridad seriamente:
+    </p>
+    <ul>
+      <li>Código abierto y auditable en <a href="https://github.com/baletron" target="_blank">GitHub</a></li>
+      <li>Uso de APIs oficiales de Google</li>
+      <li>Sin dependencias de terceros</li>
+      <li>Permisos mínimos necesarios (principio de menor privilegio)</li>
+    </ul>
+
+    <h2>7. Datos de Menores</h2>
+    <p>
+      El complemento no recopila datos de ningún usuario, incluidos menores de 13 años.
+      Cumple con COPPA (Children's Online Privacy Protection Act).
+    </p>
+
+    <h2>8. Cumplimiento con GDPR</h2>
+    <p>
+      Aunque operamos bajo leyes colombianas, respetamos GDPR:
+    </p>
+    <ul>
+      <li><strong>Derecho a saber:</strong> Esta política explica qué (no) hacemos con datos</li>
+      <li><strong>Derecho de acceso:</strong> No hay datos que acceder</li>
+      <li><strong>Derecho de eliminación:</strong> No hay datos que eliminar</li>
+      <li><strong>Derecho de portabilidad:</strong> No aplicable (sin datos)</li>
+    </ul>
+
+    <h2>9. Cambios a Esta Política</h2>
+    <p>
+      Si en el futuro decidimos recopilar algún tipo de dato (por ejemplo,
+      analytics anónimos para mejorar el producto), actualizaremos esta política
+      y notificaremos a los usuarios antes de implementar cambios.
+    </p>
+    <p>
+      <strong>Fecha de última actualización:</strong> Enero 2024
+    </p>
+
+    <h2>10. Contacto</h2>
+    <p>
+      Si tienes preguntas sobre esta política de privacidad, contáctanos:
+    </p>
+    <ul>
+      <li><strong>GitHub:</strong> <a href="https://github.com/baletron" target="_blank">@baletron</a></li>
+      <li><strong>Issues:</strong> <a href="https://github.com/baletron/calculadora-sin-formulas/issues" target="_blank">Reportar problema</a></li>
+    </ul>
+
+    <h2>11. Ley Aplicable</h2>
+    <p>
+      Esta política se rige por las leyes de Colombia. Cualquier disputa se
+      resolverá en los tribunales de Bogotá, Colombia.
+    </p>
+
+    <div class="footer">
+      <p>
+        <strong>Calculadora Sin Fórmulas</strong><br>
+        Google Workspace Marketplace Add-on<br>
+        © 2024 - Todos los derechos reservados
+      </p>
+      <p style="margin-top: 10px;">
+        <a href="https://github.com/baletron/calculadora-sin-formulas">GitHub</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

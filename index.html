@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Sin Fórmulas - Google Sheets Add-on</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      color: #1a73e8;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #5f6368;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      color: #5f6368;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .features {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .features h2 {
+      color: #202124;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .features ul {
+      list-style: none;
+    }
+
+    .features li {
+      color: #5f6368;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .features li:before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+
+    .cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 10px;
+      transition: transform 0.2s;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+    }
+
+    .cta-secondary {
+      background: white;
+      color: #1a73e8;
+      border: 2px solid #1a73e8;
+    }
+
+    .links {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .links a {
+      color: #1a73e8;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Calculadora Sin Fórmulas</h1>
+    <p class="subtitle">Google Sheets Tools</p>
+
+    <div>
+      <span class="badge">15+ Herramientas</span>
+      <span class="badge">Sin Fórmulas</span>
+      <span class="badge">Gratis</span>
+      <span class="badge">Open Source</span>
+    </div>
+
+    <p class="description">
+      Complemento para Google Sheets que te permite realizar operaciones avanzadas
+      sin escribir una sola fórmula. Interfaz visual, resultados instantáneos,
+      y completamente gratis.
+    </p>
+
+    <div class="features">
+      <h2>✨ Características</h2>
+      <ul>
+        <li>Calculadora de Columnas - Opera entre columnas visualmente</li>
+        <li>Laboratorio de Texto - Pipeline de transformaciones</li>
+        <li>Super Buscador Visual - Encuentra duplicados al instante</li>
+        <li>Suma Condicional - SUMIF sin fórmulas</li>
+        <li>Maestro de Fechas - Calcula con fechas fácilmente</li>
+        <li>Y 10+ herramientas más...</li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="https://github.com/baletron/calculadora-sin-formulas" class="cta" target="_blank">
+        Ver en GitHub
+      </a>
+      <a href="privacy.html" class="cta cta-secondary">
+        Privacy Policy
+      </a>
+    </div>
+
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/baletron" target="_blank">GitHub @baletron</a>
+    </div>
+
+    <p style="margin-top: 20px; color: #999; font-size: 12px;">
+      © 2024 Calculadora Sin Fórmulas - Todos los derechos reservados
+    </p>
+  </div>
+</body>
+</html>
